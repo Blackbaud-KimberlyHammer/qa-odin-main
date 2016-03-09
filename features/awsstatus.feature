@@ -1,3 +1,5 @@
+@active
+
 Feature: AWS Status
 
   Scenario: Get the status of all AWS instances
