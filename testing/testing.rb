@@ -6,9 +6,9 @@ rig_name = 'testing1'
 
 #@last_response = HTTParty.get('http://sc1midgard.pdnt.blackbaud.com/odin/environments/' + environment_type)
 
-@last_response = HTTParty.post('http://sc1midgard.pdnt.blackbaud.com/odin/environments/' + environment_type + '/' + rig_name, :body => {})
+#@last_response = HTTParty.post('http://sc1midgard.pdnt.blackbaud.com/odin/environments/' + environment_type + '/' + rig_name, :body => {})
 
-printf(@last_response.body)
+#printf(@last_response.body)
 
 #hashed_json = JSON.parse(@last_response.body)
 

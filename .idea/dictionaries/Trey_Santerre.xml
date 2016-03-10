@@ -2,6 +2,8 @@
   <dictionary name="Trey.Santerre">
     <words>
       <w>httparty</w>
+      <w>rubysl</w>
+      <w>securerandom</w>
     </words>
   </dictionary>
 </component>

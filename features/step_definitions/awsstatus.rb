@@ -13,7 +13,7 @@ Then(/^The machine named '([^']*)' should have a status of '([^']*)'$/) do |rig_
 end
 
 Given(/^I tell Odin to spin up a test rig named '([^']*)' in '([^']*)'$/) do |rig_name, environment_type|
-  @last_response = HTTParty.post('http://sc1midgard.pdnt.blackbaud.com/odin/environments/' + environment_type + '/' + rig_name, :body => {})
+  HTTParty.post('http://sc1midgard.pdnt.blackbaud.com/odin/environments/' + environment_type + '/' + rig_name, :body => {})
 end
 
 Then(/^The machine named '([^']*)' exists$/) do |rig_name|
@@ -29,5 +29,5 @@ Then(/^The machine named '([^']*)' exists$/) do |rig_name|
 end
 
 And(/^I tell Odin to spin down a test rig named '([^']*)' in '([^']*)'$/) do |rig_name, environment_type|
-  @last_response = HTTParty.delete('http://sc1midgard.pdnt.blackbaud.com/odin/environments/' + environment_type + '/' + rig_name, :body => {})
+  HTTParty.delete('http://sc1midgard.pdnt.blackbaud.com/odin/environments/' + environment_type + '/' + rig_name, :body => {})
 end
